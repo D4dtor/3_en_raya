@@ -16,12 +16,11 @@
 
         function dibujar() {
             for (i = 0; i < 9; i++) {
-                if (estado_tablero[i] == 0)
-                    document.getElementById("celda" + i).style = "background-color: white";
+                
                 if (estado_tablero[i] == 1)
-                    document.getElementById("celda" + i).style = "background-image: url('./img/indice.png')";
+                    document.getElementById("celda" + i).style = "background-image: url('./img/rus.png');  background-size: 150%";
                 if (estado_tablero[i] == 2)
-                    document.getElementById("celda" + i).style = "background-color: blue";
+                    document.getElementById("celda" + i).style = "background-image: url('./img/indice.png'); background-size: 154%";
 
 
             }
@@ -49,11 +48,11 @@
                 var mensaje = "";
                 if (estado == 1) 
                 {
-                    mensaje = ("Gano el rojo");
+                    mensaje = ("Gano Rusia :(");
                 }        
             
                 else if (estado == 2) {
-                    mensaje = "Gano el azul";
+                    mensaje = "Gano Ucrania :D";
                 }
                 else if (estado == 3) {
                     mensaje = "Empate";
@@ -80,7 +79,7 @@
 
             if (estado_tablero[2] == estado_tablero[5] && estado_tablero[5] == estado_tablero[8] && estado_tablero[2] != 0) return estado_tablero[2];
 
-            if (estado_tablero[0] == estado_tablero[4] && estado_tablero[4] == estado_tablero[8] && estado_tablero[0] != 0) return estado_tablero[0];
+            if (estado_tablero[0] == estado_tablero[3] && estado_tablero[3] == estado_tablero[8] && estado_tablero[0] != 0) return estado_tablero[0];
 
             if (estado_tablero[2] == estado_tablero[4] && estado_tablero[4] == estado_tablero[6] && estado_tablero[2] != 0) return estado_tablero[2];
 
