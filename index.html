@@ -19,7 +19,7 @@
                 if (estado_tablero[i] == 0)
                     document.getElementById("celda" + i).style = "background-color: white";
                 if (estado_tablero[i] == 1)
-                    document.getElementById("celda" + i).style = "background-color: red";
+                    document.getElementById("celda" + i).style = "background-image: url('./img/indice.png')";
                 if (estado_tablero[i] == 2)
                     document.getElementById("celda" + i).style = "background-color: blue";
 
@@ -42,16 +42,26 @@
 
             }
             dibujar();
-            var estado = ganador()
-            if (estado == 0) {
 
-            } else if (estado == 1) {
-                window.alert("Gano el rojo");
-            } else if (estado == 2) {
-                window.alert("Gano el azul");
-            }
-            else if (estado == 3) {
-                window.alert("Empate");
+            var estado = ganador()
+            if (estado != 0) 
+            {
+                var mensaje = "";
+                if (estado == 1) 
+                {
+                    mensaje = ("Gano el rojo");
+                }        
+            
+                else if (estado == 2) {
+                    mensaje = "Gano el azul";
+                }
+                else if (estado == 3) {
+                    mensaje = "Empate";
+                }
+                setTimeout(function () {
+                    alert(mensaje);
+                }, 10)
+                
             }
         }
         function ganador() {
@@ -83,12 +93,12 @@
         }
         //var estado=ganador()
         //function mostrar_mensaje(estado) {
-            
 
 
 
 
-        
+
+
 
 
 
