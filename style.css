@@ -6,14 +6,16 @@ h1{
 }
 .contenedor{
     border: 1px solid black;
-    height: 600px;
+    height: 400px;
     width: 105%;
     margin-left: -3%;
+
     overflow: hidden;
     margin-top: 20px;
     position: relative;
     background-image:url("./img/Polo.gif") ;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
  table{
      margin: auto;
@@ -27,8 +29,10 @@ table tr td {
 
 body{
     padding: 20px;
+    height: max-content;
     background-image: url("./img/Video\ Game\ -\ 7249.gif");
-    background-size: 34%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #gridContainer{
@@ -38,6 +42,7 @@ body{
 
 table{
     background-image: url('./img/tierra.gif');
+    background-repeat: no-repeat;
     background-size: 100%;
     border-spacing: 0px;
 }
